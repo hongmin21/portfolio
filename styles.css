@@ -59,11 +59,20 @@ body {
   padding: 10px 20px;
 }
 
+.nav-bar.active {
+  display: flex;
+}
+
 /* Responsive Design with Media Queries */
 @media (max-width: 768px) {
   .nav-bar {
     flex-direction: column;
     display: none;
+    width: 100%;
+  }
+
+  .nav-bar.active {
+    display: flex;
   }
 
   .nav-bar a {
